@@ -45,11 +45,11 @@ export function Author() {
                             Hello, I am Dr. Mira Lindehoff.
                         </p>
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
-                            With over a decade of experience in medical illustration and
-                            healthcare communication, I have collaborated with leading medical
-                            institutions and professionals to create visually engaging and
-                            informative materials. I believe in the power of design to
-                            enhance patient understanding and improve healthcare outcomes.
+                            With over a decade of experience as a practicing physician and healthcare communicator, I
+                            have established and run a leading healthcare website dedicated to improving patient care
+                            with clear communication. My work focuses on making medical
+                            information more accessible and engaging, enhancing patient understanding, and ultimately
+                            improving healthcare outcomes.
                         </p>
                         <p className="mt-8">
                             <Link
