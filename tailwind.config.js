@@ -30,6 +30,8 @@ module.exports = {
         plBlue: "#3081D0",
         lightBlue: "#6DB9EF",
         plGray: "#0c324d",
+        orange: "#f5a356",
+        ffOrange: "#f8c085",
       },
       borderRadius: {
         '4xl': '2rem',

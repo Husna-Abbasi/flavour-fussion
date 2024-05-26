@@ -6,17 +6,17 @@ import clsx from 'clsx'
 
 const sections = [
   {
-    id: 'services-offered',
+    id: 'recipes-offered',
     title: (
       <>
-        <span className="hidden lg:inline">Services Offered</span>
+        <span className="hidden lg:inline">Recipes Offered</span>
         <span className="lg:hidden">Contents</span>
       </>
     ),
   },
-  { id: 'services', title: 'Services' },
-  { id: 'resources', title: 'Resources' },
-  { id: 'appointment', title: 'Appointment' },
+  { id: 'recipes', title: 'Recipes' },
+  { id: 'resources', title: 'Recipes' },
+  { id: 'tips', title: 'Create Recipe' },
   { id: 'author', title: 'Author' },
 ]
 

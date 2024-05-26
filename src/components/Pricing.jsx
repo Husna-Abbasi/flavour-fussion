@@ -93,7 +93,7 @@ function Plan({ name, description, price, features, href, featured = false }) {
 export function Pricing() {
   return (
     <section
-      id="appointment"
+      id="tips"
       aria-labelledby="pricing-title"
       className="scroll-mt-14 pb-8 pt-16 sm:scroll-mt-32 sm:pb-10 sm:pt-20 lg:pb-16 lg:pt-32"
     >

@@ -101,7 +101,7 @@ const SignUpComponent = () => {
                             <button
                                 type="submit"
                                 // onClick={handleSubmit}
-                                className="flex w-full hover:bg-lightBlue justify-center rounded-md bg-plBlue px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm "
+                                className="flex w-full hover:bg-ffOrange justify-center rounded-md bg-orange px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm "
                             >
                                 Create Account
                             </button>

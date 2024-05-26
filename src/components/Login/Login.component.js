@@ -31,7 +31,7 @@ export default function LoginComponent() {
         <>
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col">
-                    <div className="font-bold text-plBlue mx-auto w-auto "> CARE CONNECT </div>
+                    <div className="font-bold text-orange mx-auto w-auto "> FLAVOUR FUSSION </div>
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
                         Sign in to your account
                     </h2>
@@ -80,7 +80,7 @@ export default function LoginComponent() {
                         <div className="flex flex-col gap-2">
                             <button
                                 type="submit"
-                                className="flex w-full hover:bg-lightBlue justify-center rounded-md bg-plBlue px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm "
+                                className="flex w-full justify-center rounded-md bg-orange px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm "
                             >
                                 Sign in
                             </button>
@@ -95,7 +95,7 @@ export default function LoginComponent() {
                             }}
                             passHref>
                         <button
-                                className="font-semibold leading-6 text-plBlue hover:text-lightBlue">
+                                className="font-semibold leading-6 text-orange hover:text-ffOrange">
                            Sign up
                         </button>
                         </Link>

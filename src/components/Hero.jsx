@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
-import coverImage from '@/images/doctor-7261806_1280.jpg'
+import coverImage from '@/images/delicious-burger-with-many-ingredients-isolated-white-background-tasty-cheeseburger-splash-sauce.jpg';
 import PopupComponent from "@/components/Popup/Popup.component";
 import LoginComponent from "@/components/Login/Login.component";
 import {useState} from "react";
@@ -16,14 +16,14 @@ function Testimonial() {
       </div>
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-slate-900">
-            “The care and attention provided by this team is outstanding. I feel so much better and more informed about my health.”
+            “The flavors and aromas created by this recipe are outstanding. I feel so much more confident and excited about my cooking.”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">
-        <strong className="font-semibold text-blue-600 before:content-['—_']">
-            Dr. Jane Smith
+        <strong className="font-semibold text-orange before:content-['—_']">
+            Chef Sarah Johnson
         </strong>
-          , Chief Medical Officer at HealthFirst Clinic
+          , Head Chef at Tasty Treats Kitchen
       </figcaption>
     </figure>
   )
@@ -54,15 +54,12 @@ export function Hero() {
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pl-16 lg:pt-0 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-5xl font-extrabold text-slate-900 sm:text-6xl">
-              Empowering Your Health Journey with Comprehensive Care Solutions.
+                Elevate Your Culinary Skills with Delicious Recipes and Expert Tips.
             </h1>
            <div className="mt-8 flex gap-4">
-              <Button href="#free-chapters" color="blue">
-                  Sign up
-              </Button>
               <Button
                   onClick={() => setAddLoginPopup(true)}
-                  variant="outline" color="blue">
+                  variant="outline" color="bg-orange">
                Log in
               </Button>
             </div>

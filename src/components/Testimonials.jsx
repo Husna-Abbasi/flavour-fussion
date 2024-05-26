@@ -21,28 +21,28 @@ const testimonials = [
   [
     {
       content:
-          'The healthcare services provided by this clinic have been exceptional. The staff is friendly and professional, and the facilities are top-notch.',
+          'The recipes provided on this website have been exceptional. The instructions are clear and easy to follow, and the results are always delicious.',
       author: {
         name: 'Mary Smith',
-        role: 'Patient',
+        role: 'Home Cook',
         image: avatarImage3,
       },
     },
     {
       content:
-          'As a healthcare professional, I highly recommend this clinic to anyone seeking quality medical care. The team here goes above and beyond to ensure patient satisfaction.',
+          'As a professional chef, I highly recommend this website to anyone seeking quality culinary guidance. The team here goes above and beyond to ensure user satisfaction.',
       author: {
-        name: 'Dr. John Doe',
-        role: 'Physician',
+        name: 'Chef John Doe',
+        role: 'Professional Chef',
         image: avatarImage4,
       },
     },
     {
       content:
-          ' I have been coming to this clinic for years, and I have always been impressed by the level of care I receive. The doctors and staff truly care about their patients.',
+          'I have been using this website for years, and I have always been impressed by the level of detail in the recipes. The chefs and contributors truly care about their audience.',
       author: {
         name: 'Jane Johnson',
-        role: 'Long-time Patient',
+        role: 'Long-time User',
         image: avatarImage9,
       },
     },
@@ -50,7 +50,7 @@ const testimonials = [
   [
     {
       content:
-          'This platform has been invaluable for my healthcare business. The tools provided have helped me design medical icons tailored to my needs, saving me time and effort.',
+          'This platform has been invaluable for my culinary business. The tools provided have helped me design menus tailored to my needs, saving me time and effort.',
       author: {
         name: 'Cameron Considine',
         role: 'Entrepreneur',
@@ -59,19 +59,19 @@ const testimonials = [
     },
     {
       content:
-          'The resources available here have greatly enhanced my understanding of healthcare design principles. Watching the instructional videos has been an enlightening experience.',
+          'The resources available here have greatly enhanced my understanding of cooking techniques. Watching the instructional videos has been an enlightening experience.',
       author: {
         name: 'Regina Wisoky',
-        role: 'Design Student',
+        role: 'Culinary Student',
         image: avatarImage11,
       },
     },
     {
       content:
-          'The community aspect of this platform has been unexpectedly beneficial. Engaging with other healthcare designers has broadened my perspective and improved my skills.',
+          'The community aspect of this platform has been unexpectedly beneficial. Engaging with other culinary enthusiasts has broadened my perspective and improved my skills.',
       author: {
         name: 'Vernon Cummerata',
-        role: 'UI Engineer',
+        role: 'Home Chef',
         image: avatarImage8,
       },
     },
@@ -79,25 +79,25 @@ const testimonials = [
   [
     {
       content:
-          'The techniques taught here have revolutionized my healthcare design workflow. I can now create accurate medical icons in half the time, thanks to the valuable insights gained from the videos.',
+          'The techniques taught here have revolutionized my cooking workflow. I can now create gourmet dishes in half the time, thanks to the valuable insights gained from the videos.',
       author: {
         name: 'Steven Hackett',
-        role: 'Bootcamp Instructor',
+        role: 'Culinary Instructor',
         image: avatarImage5,
       },
     },
     {
       content:
-          'Designing healthcare icons has become a therapeutic activity for me, thanks to the innovative ideas presented in this platform. It allows me to unwind while still fostering creativity.',
+          'Cooking has become a therapeutic activity for me, thanks to the innovative ideas presented on this platform. It allows me to unwind while still fostering creativity.',
       author: {
         name: 'Carla Schoen',
-        role: 'Healthcare Startup Founder',
+        role: 'Cooking Enthusiast',
         image: avatarImage10,
       },
     },
     {
       content:
-          'I can confidently say that this is the most comprehensive healthcare design resource I’ve come across. The quality of content and the depth of knowledge shared here are unmatched.',
+          'I can confidently say that this is the most comprehensive cooking resource I’ve come across. The quality of content and the depth of knowledge shared here are unmatched.',
       author: {
         name: 'Leah Kiehn',
         role: 'Creative Director',
@@ -106,7 +106,6 @@ const testimonials = [
     },
   ],
 ]
-
 function Testimonial({ author, children }) {
   return (
     <figure className="rounded-4xl p-8 shadow-md ring-1 ring-slate-900/5">
@@ -141,11 +140,11 @@ export function Testimonials() {
     <section className="py-8 sm:py-10 lg:py-16">
       <Container className="text-center">
         <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          Some kind words from early patients...
+          Some kind words from our users...
         </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-600">
-          See what our patients have to say about their experiences with our
-          healthcare services.
+          See what our users have to say about their experiences with our
+          cooking resources.
         </p>
       </Container>
       <Expandable className="group mt-16">

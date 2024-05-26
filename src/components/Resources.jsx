@@ -1,17 +1,18 @@
+'use client'
 import Image from 'next/image'
-
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
 import abstractBackgroundImage from '@/images/resources/abstract-background.png'
-import discordImage from '@/images/resources/discord.svg'
-import figmaImage from '@/images/resources/figma.svg'
-import videoPlayerImage from '@/images/resources/video-player.svg'
+import discordImage from '@/images/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai.jpg'
+import videoPlayerImage from '@/images/crispy-fried-chicken-plate-with-salad-carrot.jpg'
+import figmaImage from '@/images/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai.jpg'
+import {useEffect, useState} from "react";
 
 const resources = [
   {
-    title: 'Telemedicine Solutions',
+    title: 'Recipe Collection',
     description:
-        'Explore our telemedicine tools that enable remote patient consultations and virtual healthcare services.',
+        'Explore our extensive collection of recipes for every occasion and taste preference.',
     image: function FigmaImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
@@ -58,6 +59,15 @@ const resources = [
 ]
 
 export function Resources() {
+  const [recipe, setRecipe] = useState(null);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/api/recipes')
+        .then(response => response.json())
+        .then(data => setRecipe(data))
+        .catch(error => console.error('Error fetching recipe:', error));
+  }, []);
+
   return (
     <section
       id="resources"
@@ -66,7 +76,7 @@ export function Resources() {
     >
       <Container>
         <SectionHeading number="3" id="resources-title">
-          Resources
+          Recipes
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
           Tools and resources to enhance your healthcare practice.
@@ -80,20 +90,23 @@ export function Resources() {
           role="list"
           className="-mx-3 grid grid-cols-1 gap-y-10 lg:grid-cols-3 lg:text-center xl:-mx-12 xl:divide-x xl:divide-slate-400/20"
         >
-          {resources.map((resource) => (
+          {recipe && recipe?.map((rec) => (
             <li
-              key={resource.title}
+              key={rec._id}
               className="grid auto-rows-min grid-cols-1 items-center gap-8 px-3 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-1 xl:px-12"
             >
               <div className="relative h-48 overflow-hidden rounded-2xl shadow-lg sm:h-60 lg:h-40">
-                <resource.image />
+                <div
+                    className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
+                  <Image src={figmaImage} alt="" unoptimized/>
+                </div>
               </div>
               <div>
                 <h3 className="text-base font-medium tracking-tight text-slate-900">
-                  {resource.title}
+                  {rec.title}
                 </h3>
                 <p className="mt-2 text-sm text-slate-600">
-                  {resource.description}
+                  {rec.instructions}
                 </p>
               </div>
             </li>

@@ -4,7 +4,6 @@ import { FreeChapters } from '@/components/FreeChapters'
 import { Hero } from '@/components/Hero'
 import { Introduction } from '@/components/Introduction'
 import { NavBar } from '@/components/NavBar'
-import { Pricing } from '@/components/Pricing'
 import { Resources } from '@/components/Resources'
 import { Screencasts } from '@/components/Screencasts'
 import { TableOfContents } from '@/components/TableOfContents'
@@ -12,6 +11,7 @@ import { Testimonial } from '@/components/Testimonial'
 import { Testimonials } from '@/components/Testimonials'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
+import Recipe from "@/components/Recipe/page";
 
 export default function Home() {
   return (
@@ -24,13 +24,13 @@ export default function Home() {
             id="testimonial-from-tommy-stroman"
             author={{
                 name: 'Tommy Stroman',
-                role: 'developer',
+                role: 'chef',
                 image: avatarImage1,
             }}
         >
             <p>
-                “I was clueless about managing my health until I discovered these services. Now, I feel empowered to
-                take control of my well-being. An invaluable resource!”
+                “CookMaster has transformed my cooking skills! The recipes are not only delicious but also easy to follow.
+                I feel like a professional chef in my own kitchen!”
             </p>
         </Testimonial>
         <Screencasts/>
@@ -38,18 +38,19 @@ export default function Home() {
             id="testimonial-from-gerardo-stark"
             author={{
                 name: 'Gerardo Stark',
-                role: 'Creator of Pandemicons',
+                role: 'chef',
                 image: avatarImage2,
             }}
         >
             <p>
-                “I used to struggle with understanding my health and finding the right care. Thanks to this service, I
-                now have regular check-ups and feel healthier and more confident in managing my well-being.”
+                “CookMaster has completely changed the way I approach cooking! I used to struggle in the kitchen, but with
+                their easy-to-follow recipes, I now cook with confidence and joy. My family loves the meals, and I feel
+                like a pro chef!”
             </p>
         </Testimonial>
         <Resources/>
         <FreeChapters/>
-        <Pricing/>
+        <Recipe/>
         <Testimonials/>
         <Author/>
         <Footer/>

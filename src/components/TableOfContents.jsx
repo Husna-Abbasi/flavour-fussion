@@ -7,49 +7,46 @@ import {
 import { SectionHeading } from '@/components/SectionHeading'
 
 const tableOfContents = {
-  'Primary Care': {
-    'General Check-Up': 1,
-    'Pediatric Care': 15,
-    'Women\'s Health': 20,
+  'Quick and Easy Recipes': {
+    'Simple Breakfast Ideas': 1,
+    '10-Minute Lunch Recipes': 15,
+    'Effortless Dinner Ideas': 20,
   },
-  'Specialized Treatments': {
-    'Cardiology': 21,
-    'Neurology': 22,
-    'Orthopedics': 26,
-    'Dermatology': 31,
-    'Oncology': 45,
+  'Specialty Dishes': {
+    'Gourmet Desserts': 21,
+    'Exotic Entrees': 22,
+    'International Flavors': 26,
+    'Festive Treats': 31,
+    'Healthy Alternatives': 45,
   },
-  'Mental Health Services': {
-    'Therapy Sessions': 50,
-    'Counseling': 57,
-    'Psychiatry': 66,
+  'Kitchen Tips and Tricks': {
+    'Ingredient Substitutions': 50,
+    'Cooking Techniques': 57,
+    'Meal Planning': 66,
   },
-  'Wellness Programs': {
-    'Nutrition Counseling': 78,
-    'Fitness Training': 82,
-    'Stress Management': 88,
-    'Yoga and Meditation': 95,
+  'Healthy Living': {
+    'Nutritious Recipes': 78,
+    'Fitness Tips': 82,
+    'Wellness Habits': 88,
+    'Mindful Eating': 95,
   },
 }
-
 export function TableOfContents() {
   return (
       <section
-          id="services-offered"
+          id="recipes-offered"
           aria-labelledby="table-of-contents-title"
           className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
       >
         <Container>
           <SectionHeading number="1" id="table-of-contents-title">
-            Services Offered
+            Recipes Offered
           </SectionHeading>
           <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-            Explore our range of healthcare services. All the information you need
-            is right here.
+            Explore our collection of delicious recipes. From quick meals to gourmet dishes, find what you are craving.
           </p>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our healthcare offerings are carefully curated to meet your needs and
-            ensure your well-being. Dive into our service details below.
+            Our recipes are designed to inspire your inner chef and bring excitement to your kitchen. Dive into our recipe categories below.
           </p>
           <Expandable>
             <ol role="list" className="mt-16 space-y-10 sm:space-y-16">

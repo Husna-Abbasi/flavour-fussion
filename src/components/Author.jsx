@@ -41,15 +41,14 @@ export function Author() {
                             Author
                         </SectionHeading>
                         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-                            <span className="block text-blue-600">Dr. Mira Lindehoff –</span>
-                            Hello, I am Dr. Mira Lindehoff.
+                            <span className="block text-blue-600">Chef Mira Lindehoff –</span>
+                            Hello, I am Chef Mira Lindehoff.
                         </p>
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
-                            With over a decade of experience as a practicing physician and healthcare communicator, I
-                            have established and run a leading healthcare website dedicated to improving patient care
-                            with clear communication. My work focuses on making medical
-                            information more accessible and engaging, enhancing patient understanding, and ultimately
-                            improving healthcare outcomes.
+                            With over a decade of experience as a professional chef and culinary communicator, I
+                            have established and run a leading cooking website dedicated to improving culinary skills
+                            with clear instruction. My work focuses on making cooking techniques more accessible and engaging, enhancing home cooks' understanding, and ultimately
+                            improving culinary outcomes.
                         </p>
                         <p className="mt-8">
                             <Link
@@ -57,7 +56,7 @@ export function Author() {
                                 className="inline-flex items-center text-base font-medium tracking-tight text-slate-900"
                             >
                                 <XIcon className="h-10 w-10 fill-current"/>
-                                <span className="ml-4">Connect on HeartHealth</span>
+                                <span className="ml-4">Connect on Flavour Fussion</span>
                             </Link>
                         </p>
                     </div>

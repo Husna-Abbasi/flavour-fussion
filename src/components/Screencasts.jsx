@@ -2,38 +2,36 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
-import duotoneImage from '@/images/screencasts/duotone.svg'
-import gridsImage from '@/images/screencasts/grids.svg'
-import setupImage from '@/images/screencasts/setup.svg'
-import strokesImage from '@/images/screencasts/strokes.svg'
+import setupImage from '@/images/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai.jpg';
+import strokesImage from '@/images/crispy-fried-chicken-plate-with-salad-carrot.jpg';
 
 const videos = [
   {
-    title: 'General Check-Up',
+    title: 'Classic Spaghetti Bolognese',
     description:
-        'Comprehensive health check-ups to ensure your overall well-being. Includes physical exams, lab tests, and consultations.',
+        'A rich and hearty spaghetti dish made with ground beef, tomatoes, and Italian herbs. Perfect for a comforting meal.',
     image: setupImage,
     runtime: { minutes: 16, seconds: 54 },
   },
   {
-    title: 'Pediatric Care',
+    title: 'Chicken Caesar Salad',
     description:
-        'Dedicated healthcare services for children, from newborns to teenagers, ensuring they grow up healthy and strong.',
-    image: gridsImage,
+        'A refreshing salad featuring grilled chicken, crisp romaine lettuce, crunchy croutons, and Caesar dressing.',
+    image: strokesImage,
     runtime: { minutes: 9, seconds: 12 },
   },
   {
-    title: 'Specialized Treatments',
+    title: 'Chocolate Chip Cookies',
     description:
-        'Advanced treatments for specific health conditions, including cardiology, neurology, and orthopedics.',
-    image: strokesImage,
+        'Deliciously soft and chewy cookies loaded with chocolate chips. A classic treat for any occasion.',
+    image: setupImage,
     runtime: { minutes: 23, seconds: 25 },
   },
   {
-    title: 'Mental Health Services',
+    title: 'Vegetable Stir-Fry',
     description:
-        'Support and treatment for mental health conditions, including therapy and counseling sessions.',
-    image: duotoneImage,
+        'A quick and easy stir-fry with fresh vegetables and a savory sauce. Perfect for a healthy weeknight dinner.',
+    image: strokesImage,
     runtime: { minutes: 28, seconds: 44 },
   },
 ]
@@ -57,19 +55,19 @@ function PlayIcon(props) {
 export function Screencasts() {
   return (
     <section
-      id="services"
+      id="recipes"
       aria-labelledby="screencasts-title"
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
         <SectionHeading number="2" id="screencasts-title">
-          Services
+          Recipes
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Explore the variety of services we offer to cater to your healthcare needs.
+          Discover a world of delicious recipes to elevate your culinary skills.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          From general check-ups to specialized treatments, our services are designed to provide comprehensive care.
+          From classic comfort foods to innovative dishes, our recipes are designed to inspire and delight.
         </p>
       </Container>
       <Container size="lg" className="mt-16">
@@ -83,7 +81,7 @@ export function Screencasts() {
                 className="relative flex h-44 items-center justify-center rounded-2xl px-6 shadow-lg"
                 style={{
                   backgroundImage:
-                    'conic-gradient(from -49.8deg at 50% 50%, #7331FF 0deg, #00A3FF 59.07deg, #4E51FF 185.61deg, #39DBFF 284.23deg, #B84FF1 329.41deg, #7331FF 360deg)',
+                      'conic-gradient(from -49.8deg at 50% 50%, #FF7F50 0deg, #FFA07A 59.07deg, #FF6347 185.61deg, #FFD700 284.23deg, #FF8C00 329.41deg, #FF7F50 360deg)',
                 }}
               >
                 <div className="flex overflow-hidden rounded shadow-sm">

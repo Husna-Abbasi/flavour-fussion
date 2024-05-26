@@ -12,26 +12,27 @@ export function Introduction() {
         >
             <Container className="text-lg tracking-tight text-slate-700">
                 <p className="font-display text-4xl font-bold tracking-tight text-slate-900">
-                    Welcome to HealthFirst, where your well-being is our priority.
+                    Welcome to CookMaster, where your culinary journey begins.
                 </p>
                 <p className="mt-4">
-                    At HealthFirst, we believe in a holistic approach to healthcare. Our dedicated team of medical
-                    professionals is here to provide you with comprehensive care tailored to your unique needs.
+                    At CookMaster, we are passionate about cooking and sharing delicious recipes with you. Our
+                    team of culinary experts is dedicated to providing you with a wide range of recipes that
+                    will inspire you to create mouthwatering dishes in your own kitchen.
                 </p>
                 <p className="mt-4">
-                    From preventive services to advanced treatments, we are committed to helping you achieve and
-                    maintain optimal health.
+                    From traditional family recipes to modern culinary creations, we are here to guide you
+                    every step of the way.
                 </p>
                 <p className="mt-4">
-                    Discover the difference personalized care can make at HealthFirst.
+                    Explore the world of cooking with CookMaster and embark on a flavorful adventure.
                 </p>
                 <ul role="list" className="mt-8 space-y-3">
                     {[
-                        'Comprehensive primary care services',
-                        'Specialized care for chronic conditions',
-                        'Advanced diagnostic and imaging services',
-                        'Personalized wellness plans',
-                        'Access to the latest medical technologies',
+                        'Easy-to-follow recipes for all skill levels',
+                        'Tips and tricks from professional chefs',
+                        'Ingredient substitutions and cooking hacks',
+                        'Healthy and nutritious meal ideas',
+                        'Exciting new recipes updated regularly',
                     ].map((feature) => (
                         <li key={feature} className="flex">
                             <CheckIcon className="h-8 w-8 flex-none fill-blue-500"/>
@@ -40,15 +41,14 @@ export function Introduction() {
                     ))}
                 </ul>
                 <p className="mt-8">
-                    Join us at HealthFirst and take the first step towards a healthier, happier life.
-
+                    Join us at CookMaster and discover the joy of cooking delicious meals for yourself and your loved ones.
                 </p>
                 <p className="mt-10">
                     <Link
                         href="#contact"
-                        className="text-base font-medium text-blue-600 hover:text-blue-800"
+                        className="text-base font-medium text-ffOrange hover:text-orange"
                     >
-                        Contact us today to schedule an appointment{' '}
+                        Get started today and explore our recipes collection{' '}
                         <span aria-hidden="true">&rarr;</span>
                     </Link>
                 </p>
