@@ -1,11 +1,15 @@
+'use client'
 import Image from 'next/image'
-
 import { Button } from '@/components/Button'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
 import coverImage from '@/images/doctor-7261806_1280.jpg'
+import PopupComponent from "@/components/Popup/Popup.component";
+import LoginComponent from "@/components/Login/Login.component";
+import {useState} from "react";
 function Testimonial() {
-  return (
+
+    return (
     <figure className="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left">
       <div className="flex justify-center text-blue-600 lg:justify-start">
         <StarRating />
@@ -26,7 +30,9 @@ function Testimonial() {
 }
 
 export function Hero() {
-  return (
+    const [addLoginPopup, setAddLoginPopup] = useState(false);
+
+    return (
     <header className="overflow-hidden bg-slate-100 lg:bg-transparent lg:px-5">
       <div className="mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 pt-16 md:pt-20 lg:grid-cols-12 lg:gap-y-20 lg:px-3 lg:pb-36 lg:pt-20 xl:py-32">
         <div className="relative flex items-end lg:col-span-5 lg:row-span-2">
@@ -54,12 +60,22 @@ export function Hero() {
               <Button href="#free-chapters" color="blue">
                   Sign up
               </Button>
-              <Button href="#pricing" variant="outline" color="blue">
+              <Button
+                  onClick={() => setAddLoginPopup(true)}
+                  variant="outline" color="blue">
                Log in
               </Button>
             </div>
           </div>
         </div>
+          <PopupComponent
+              showPopup={addLoginPopup}
+              setShowPopup={setAddLoginPopup}
+              showFooter={false}
+          >
+              <LoginComponent
+                  setAddLoginPopup={setAddLoginPopup}/>
+          </PopupComponent>
       </div>
     </header>
   )

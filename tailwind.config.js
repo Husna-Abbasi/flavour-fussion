@@ -26,6 +26,11 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     extend: {
+      colors : {
+        plBlue: "#3081D0",
+        lightBlue: "#6DB9EF",
+        plGray: "#0c324d",
+      },
       borderRadius: {
         '4xl': '2rem',
         '5xl': '3rem',
