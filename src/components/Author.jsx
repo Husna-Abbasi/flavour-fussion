@@ -47,7 +47,7 @@ export function Author() {
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
                             With over a decade of experience as a professional chef and culinary communicator, I
                             have established and run a leading cooking website dedicated to improving culinary skills
-                            with clear instruction. My work focuses on making cooking techniques more accessible and engaging, enhancing home cooks' understanding, and ultimately
+                            with clear instruction. My work focuses on making cooking techniques more accessible and engaging, enhancing home cooks understanding, and ultimately
                             improving culinary outcomes.
                         </p>
                         <p className="mt-8">
